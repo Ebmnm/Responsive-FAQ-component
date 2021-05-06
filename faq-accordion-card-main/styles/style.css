@@ -1,0 +1,183 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat;
+  background: linear-gradient(#af67e9, #6565e7) no-repeat;
+}
+
+.box {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 60%;
+  height: 60%;
+  margin-top: 100px;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  min-height: 370px;
+  min-width: 800px;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.left {
+  margin-top: 3%;
+  width: 50%;
+}
+
+.big {
+  position: absolute;
+  left: 200px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 20px;
+}
+
+.gone {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(228, 226, 226, 0.4);
+  padding: 5px;
+}
+
+span:hover {
+  cursor: pointer;
+  color: orangered;
+}
+
+.arrow-start {
+  background-image: url("/faq-accordion-card-main/images/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  content: "";
+  height: 10px;
+  width: 8%;
+  float: right;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  background-position: 100% 100%;
+}
+
+.arrow-up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  background-position: 0 0;
+}
+
+@media (max-width: 1300px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .box {
+    margin: 0 5%;
+    width: 80%;
+    height: auto;
+    min-height: 0px;
+    min-width: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .left {
+    width: 100%;
+    height: 35%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .big {
+    display: none;
+  }
+  .little {
+    display: block;
+  }
+  span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 252px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  p {
+    width: 260px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

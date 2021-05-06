@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+<link rel="stylesheet" href="/faq-accordion-card-main/styles/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+ 
+</head>
+<body>
+ <div class="box">
+   <div class="left">
+<img class="big" src="/faq-accordion-card-main/images/illustration-woman-online-desktop.svg" alt="">
+<img src="/faq-accordion-card-main/images/illustration-woman-online-mobile.svg" alt="" class="little">
+   </div>
+   <div class="right">
+     <h1>FAQ</h1>
+     <ul>
+       <li> <span>How many team members can I invite? <div class="arrow-start"></div></span> <p class="gone">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae assumenda quis ab eum voluptatd.'</p></li>
+
+       <li> <span>What is the maximum file upload size?<div class="arrow-start"></div></span>   <p class="gone">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, earum! </p></li>
+
+       <li> <span>How do I reset my password?<div class="arrow-start"></div></span>   <p class="gone">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, debitis? </p></li>
+
+       <li> <span>Can I cancel my subscription? <div class="arrow-start"></div></span> <p class="gone">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, magnam! </p></li>
+     </ul>
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script>
+ let span = document.getElementsByTagName('span')
+ let arrow = document.querySelectorAll(".arrow-start")
+ for(let i=0; i<span.length; i++) {
+   span[i].addEventListener("click", (e) => {
+    e = e || window.event;
+    clicked = e.target
+    clicked.classList.toggle("bold");
+    let child = clicked.nextElementSibling
+    child.classList.toggle("gone")
+    console.log(arrow[i])
+arrow[i].classList.toggle("arrow-up")
+    /*  clicked.lastChild.classList.toggle("gone") */
+
+
+
+/* clicked.nextElementSibling.classList.toggle("gone") */
+
+
+ })
+ }
+ 
+
+
+</script>
+    </script>
+</body>
+</html>
